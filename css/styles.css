@@ -8,6 +8,12 @@
    
 }
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 /* Typography */
 
 html {
@@ -101,3 +107,39 @@ p {
 .icon--primary {
     fill: var(--color-primary);
 }
+
+/* Buttons */
+.btn {
+border: 0;
+cursor: pointer;
+display: inline-block;
+font-size: 1.0rem;
+font-weight: 450;
+line-height: 0;
+margin: 1rem 0;
+padding: 2rem 3rem;
+text-align: center;
+white-space: nowrap;
+text-decoration: none;
+}
+
+.btn--accent:hover {
+    background: #d69345;
+    
+}
+
+.btn--accent {
+    background: var(--color-accent);
+    color: #fff;
+    flex-grow: 1;
+    
+
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+     font-size:1.2rem ;
+    }    
+
+}
+
