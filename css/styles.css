@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #000000;
+    --color-primary: #f5f5f7;
     --color-secondary: #1B1E22;
     --color-accent: #C5853A;
     --color-headings: #000000;
@@ -143,3 +143,19 @@ text-decoration: none;
 
 }
 
+/* Cards */
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3; /* 0 Horizontal 0 vertical offfsets, 20px shadow blur, 10px shadow spread */
+    overflow: hidden;
+}
+
+.card__header,
+.card__body {
+    padding: 2rem 3rem;
+}
+
+.card--primary {
+    background: var(--color-primary);
+    color: #7A7A7A;
+}
