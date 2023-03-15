@@ -1,10 +1,18 @@
 :root {
+    
+    --e-global-color-primary: #000000;
+    --e-global-color-secondary: #1B1E22;
+    --e-global-color-text: #7A7A7A;
+    --e-global-color-accent: #C5853A;
+    --e-global-color-1dd9aab: #F5F5F7;
+    
     --color-primary: #f5f5f7;
     --color-secondary: #1B1E22;
     --color-accent: #C5853A;
     --color-headings: #000000;
     --color-text: #7A7A7A;
     --color-footer-headings:#FFFFFF;
+    --color-footer-primary:#000000;
    
 }
 
@@ -99,14 +107,36 @@ p {
 
 /* Icons */
 .icon {
-    width: 70px;
-    height: 70px;
-
-}
-
-.icon--primary {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icon--small {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .icon--primary {
     fill: var(--color-primary);
-}
+  }
+  
+  .icon--white {
+    fill: #fff;
+  }
+  
+  .icon-container {
+    background: #f3f9fa;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon-container--accent {
+    background: var(--color-accent);
+  }
 
 /* Buttons */
 .btn {
@@ -175,4 +205,27 @@ text-decoration: none;
     .grid--1x4 {
         grid-template-columns: repeat(4, 1fr); /* Take all avilaible space, div by two and give each col 1 space */
     }
+}
+
+/* Blocks */
+.block {
+    --padding-vertical: 6rem; /* This custom property is availiable to an element w/ a class of block and all its children */
+    padding: var(--padding-vertical) 2rem;
+    text-align: center;
+}
+
+.block__header {
+    text-align:center;
+    margin-bottom: 4rem;
+}
+
+.block__heading {
+    margin-top: 0;
+    
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto; /* Zero pixels for vertical margin and auto for horizontal margin
+    which will equally distribute space on sides of block */
 }
