@@ -41,6 +41,7 @@ body {
 h1, h2, h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 h4 {
@@ -49,10 +50,12 @@ h4 {
 
 h1 {
     font-size: 6.5rem;
+    
 }
 
 h2 {
     font-size: 4.5rem;
+    
 }
 
 h3 {
@@ -62,6 +65,8 @@ h3 {
 
 h4 {
     font-size: 2.5rem;
+    color: #C5853A;
+    margin-bottom: 0;
 }
 
 p {
@@ -74,7 +79,8 @@ p {
     }
 
     h1 {
-        font-size: 8rem;
+        font-size: 4rem;
+        
     }
     h2 {
         font-size: 4rem;
@@ -115,6 +121,7 @@ a {
 .icon {
     width: 40px;
     height: 40px;
+    
   }
   
   .icon--small {
@@ -198,20 +205,18 @@ text-decoration: none;
 
 .grid {
     display: grid;
-
+  
 }
 
 @media screen and (min-width: 768px) {
     .grid--1x2 {
         grid-template-columns: repeat(2, 1fr); /* Take all avilaible space, div by two and give each col 1 space */
+        justify-content: left;
+        
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .grid--1x4 {
-        grid-template-columns: repeat(4, 1fr); /* Take all avilaible space, div by two and give each col 1 space */
-    }
-}
+
 
 /* Collapsibles */
 .collapsible__header {
@@ -269,7 +274,6 @@ text-decoration: none;
 }
 
 
-
 /*Navigation Bar */
 .nav {
     background: #fff;
@@ -284,6 +288,7 @@ text-decoration: none;
 .nav__list {
     width: 100%;
     margin: 0;
+    
         
 }
 
@@ -309,7 +314,7 @@ text-decoration: none;
     opacity: 0.5; /* Start toggler with a lighter color */
     transition: box-shadow .15s;
     cursor: pointer;
-    border-color: rgb(255,102,203)
+    
 }
 
 .nav.collapsible--expanded .nav__toggler { /* Uses a double class selector, selects element that has both
@@ -322,6 +327,7 @@ text-decoration: none;
 
 .nav__brand {
     transform: translateY(5px); /* moves logo icon 5px down) */
+    /*transform: translateX(428px); /* moves logo icon 5px down) */
 }
 
 
@@ -343,3 +349,36 @@ text-decoration: none;
     }
 
 }
+
+/* Hero */
+
+.hero__tagline { /* The elements below are part of an element called tagline that is part of the hero components.
+    if have other paragrahps later with exact same style want to extract this content into a separate reusable class.
+    Need to keep content separated from the container (object orientated programming). */
+    font-size: 2rem;
+    color: #a1a0a8;
+    letter-spacing: 1px;
+    margin: 2rem 0 1.5rem; /* Top margin of 2rems and bottom of 1.5 */
+    
+}
+
+.hero__image {
+    width: 100%;
+    
+} 
+
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 0;
+    }
+
+    .hero__content {
+        text-align: left;
+        align-self: center;
+        
+
+    }
+        
+}
+
