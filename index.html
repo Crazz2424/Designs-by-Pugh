@@ -12,7 +12,22 @@
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-       
+    <header>
+        <nav class="nav collapsible">
+          <a aria-label="Designs by Pugh" class="nav__brand" href="/"><img src="\images/Design_Logo4.png" alt="" /></a>
+          <svg class="icon icon--black nav__toggler">
+            <use xlink:href="images/sprite.svg#menu"></use>
+          </svg>
+          <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item"><a href="#">Services</a></li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+            
+          </ul>
+        </nav>
+      </header>
+        
     <section class="block">
         <div class="container grid grid--1x2">
             <header class=" block__header hero__content">
@@ -25,7 +40,30 @@
             <img class="hero__image"src="images/Wood_tool3.jpg" alt="Picture of Woodworking tools">
         </div>
     </section>
-
+    
+    <section class="block block--grey">
+        <div class="container grid grid--1x3">
+            <div class="box1">
+                <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#chisel2"></use>
+                </svg>
+                <p>Years Experience</p>
+            </div>
+                <div class="box2">
+                    <svg class="icon icon--primary">
+                        <use xlink:href="images/sprite.svg#chisel2"></use>
+                    </svg>
+                    <p>Premium Service</p>
+                </div>
+                    <div>
+                        <svg class="icon icon--primary">
+                        <use xlink:href="images/sprite.svg#chisel2"></use>
+                        </svg>
+                        <p> Quality Product</p>
+                    </div>
+             
+        </div>
+    </section>
 
         <script src="js/main.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
