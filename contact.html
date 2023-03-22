@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav collapsible">
+          <a aria-label="Designs by Pugh" class="nav__brand" href="/"><img src="\images/Design_Logo4.png" alt="" /></a>
+            <svg class="icon icon--black nav__toggler">
+                <use xlink:href="images/sprite.svg#menu"></use>
+            </svg>
+                <ul class="list nav__list collapsible__content">
+                    <li class="nav__item"><a href="/">Home</a></li>
+                    <li class="nav__item"><a href="https://thelatentman.com/">About</a></li>
+                    <li class="nav__item"><a href="contact.html">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+        
+    <section class="block">
+        <div class="container grid grid--1x2">
+            <header class=" block__header hero__content" data-aos="fade-up">
+                <h1>Contacts</h1>
+                <p class="hero__tagline">Intersted in my work? <br/> Contact me to discuss a purchase. <br> <br>
+                   Kelly Pugh <br> Email: kelly2337@hotmail.com <br> Phone: 404-918-5881
+                </p>
+                
+            </header>    
+            <img class="hero__image"src="images/contact_woodwork2.jpg" alt="Picture of man drilling" data-aos="fade-right">
+        </div>
+    </section>
+            <script src="js/main.js"></script>
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
+        </body>
+    </html>

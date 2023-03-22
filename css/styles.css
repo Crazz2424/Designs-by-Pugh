@@ -9,7 +9,6 @@
     --color-footer-primary:#000000;
     --color-background: #f5f5f7;
     --color-background-overlay: #000;
-       
 }
 
 /* Define a rule using universal selector, grabbing all elements * as well as all elements after + beforeafter of before */
@@ -20,7 +19,6 @@
 }
 
 /* Typography */
-
 html {
     /* 62.5% of 16px = 10px */
     font-size: 62.5%;
@@ -31,7 +29,6 @@ body {
     color: var(--color-text);
     font-size: 2.4rem;
     line-height: 1.5;
-    
 }
 
 h1, h2, h3 {
@@ -46,17 +43,14 @@ h4 {
 
 h1 {
     font-size: 6.5rem;
-    
 }
 
 h2 {
     font-size: 4.5rem;
-    
 }
 
 h3 {
     font-size: 3.5rem;
-
 }
 
 h4 {
@@ -69,7 +63,6 @@ h5 {
     font-size: 2.0rem;
     color: #000;
     margin-top: 0;
-    
 }
 
 p {
@@ -124,7 +117,6 @@ a {
 .icon {
     width: 40px;
     height: 40px;
-    
   }
   
   .icon--small {
@@ -156,61 +148,46 @@ a {
 
 /* Buttons */
 .btn {
-border: 0;
-cursor: pointer;
-display: inline-block;
-font-size: 1.0rem;
-font-weight: 450;
-line-height: 0;
-margin: 1rem 0;
-padding: 2rem 3rem;
-text-align: center;
-white-space: nowrap;
-text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.0rem;
+    font-weight: 450;
+    line-height: 0;
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
 }
 
 .btn--accent:hover {
     background: #d69345;
-    
 }
 
 .btn--accent {
     background: var(--color-accent);
     color: #fff;
     flex-grow: 1;
-    
-
 }
 
 @media screen and (min-width: 1024px) {
     .btn {
      font-size:1.2rem ;
     }    
-
 }
 
-/* Cards */
-.card {
-    border-radius: 7px;
-    box-shadow: 0 0 20px 10px #f3f3f3; /* 0 Horizontal 0 vertical offfsets, 20px shadow blur, 10px shadow spread */
-    overflow: hidden;
-}
-
-.card__header,
-.card__body {
-    padding: 2rem 3rem;
-}
-
-.card--primary {
-    background: var(--color-primary);
-    color: #7A7A7A;
-}
-
+/* Grids */
 .grid {
     display: grid;
     place-content: center;
     width: auto;
-    
+}
+
+.contact-grid {
+    display: grid;
+    place-content: center;
+    width: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -222,11 +199,9 @@ text-decoration: none;
     .grid--1x3 {
         grid-template-columns: repeat(3, 1fr); /* Take all avilaible space, div by two and give each col 1 space */
         justify-content: left;
+        padding-top: 25px;
     }
-
-    
 }
-
 
 /* Collapsibles */
 .collapsible__header {
@@ -284,7 +259,6 @@ text-decoration: none;
     which will equally distribute space on sides of block */
 }
 
-
 /*Navigation Bar */
 .nav {
     background: #fff;
@@ -293,28 +267,22 @@ text-decoration: none;
     flex-wrap: wrap;
     padding: 1rem;
     align-items: center;
-          
 }
 
 .nav__list {
     width: 100%;
     margin: 0;
-    
-        
 }
 
 .nav__item {
     padding: 0.5rem 2rem;
     border-bottom: 1px solid #222;
-        
 }
 
 .nav__item > a { /* Since list items have separate colors use direct child selector to target the anchor
     inside this element. */
     color: #a1a0a8;
     transition: color 0.3s;
-    
-    
 }
 
 .nav__item > a:hover { /* Use hover psedo-class selector to change text color when pointer over text */
@@ -325,7 +293,6 @@ text-decoration: none;
     opacity: 0.5; /* Start toggler with a lighter color */
     transition: box-shadow .15s;
     cursor: pointer;
-    
 }
 
 .nav.collapsible--expanded .nav__toggler { /* Uses a double class selector, selects element that has both
@@ -333,14 +300,12 @@ text-decoration: none;
     opacity: 1;
     box-shadow: 0 0 0 3px #666; /* horizontal, vertical offsets, make shadow softer, spread by 3px */
     border-radius: 5px;
-    
 }
 
 .nav__brand {
     transform: translateY(5px); /* moves logo icon 5px down) */
     /*transform: translateX(428px); /* moves logo icon 5px down) */
 }
-
 
 @media screen and (min-width: 768px) {
     .nav__toggler {
@@ -352,32 +317,26 @@ text-decoration: none;
         font-size: 1.6rem;
         max-height: 100%; /* These two properties make the navigation list visible at start */
         opacity: 1;
-                
     }
 
     .nav__item {
         border: 0;
     }
-
 }
 
 /* Hero */
-
-.hero__tagline { /* The elements below are part of an element called tagline that is part of the hero components.
+    .hero__tagline { /* The elements below are part of an element called tagline that is part of the hero components.
     if have other paragrahps later with exact same style want to extract this content into a separate reusable class.
     Need to keep content separated from the container (object orientated programming). */
     font-size: 2rem;
     color: #a1a0a8;
     letter-spacing: 1px;
     margin: 2rem 0 1.5rem; /* Top margin of 2rems and bottom of 1.5 */
-    
 }
 
 .hero__image {
     width: 100%;
-    
 } 
-
 
 @media screen and (min-width: 768px) {
     .hero {
@@ -387,17 +346,15 @@ text-decoration: none;
     .hero__content {
         text-align: left;
         align-self: center;
-        
-
     }
-        
 }
 
 /* Banners */
 .block--grey {
     background-color: var(--color-background);
     color: #000;
-    padding: 25px;
+    padding: 35px;
+    
 }
 
 /*products */
@@ -412,7 +369,6 @@ text-decoration: none;
     color: var(--color-accent);
     text-align: center;
     font-weight: 600;
-    
 }
 
 .background {
@@ -421,7 +377,6 @@ text-decoration: none;
     background-size: cover;
     background-blend-mode: multiply;
     box-shadow: inset 0 0 0 90vw rgba(0, 0, 0, 0.815)
-    
 }
 
 .background-overlay {
@@ -429,14 +384,12 @@ text-decoration: none;
     background-position: center center;
     background-size: cover;
     background-blend-mode: multiply;
-      
 }
 .header-box {
     grid-column: 1 / 4;
     grid-row: 1;
     justify-content: center;
     margin-top: 20px;
-        
 }
 .product-box1 {
     grid-column: 1;
